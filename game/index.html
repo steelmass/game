@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <div class="game">
+      <div class="tries">
+         Осталось попыток:<span>10</span>
+      </div>
+
+      <div class="word">
+         
+      </div>
+
+      <form>
+         <input placeholder="Введите букву" maxlength="1" type="text">
+         <input class="enter" type="reset" value="Подтвердить">
+         <span></span>
+      </form>
+
+      <div class="wrong"> Неверные буквы:
+         <div class="wrong__chars">
+            
+         </div>
+      </div>
+      <div class="canvas__wrapper">
+         <canvas id='canvas'>
+
+         </canvas>
+      </div>
+   </div>
+
+   <div class="mod">
+      <div class="mod__wrapper">
+         <div class="mod__hello">
+            Добро пожаловать в игру: Виселица!
+         </div>
+         <div class="chose__wrapper">
+            <select class="chose__mode">
+               <option value="10">easy mod</option>
+               <option value="8">middle mod</option>
+               <option value="5">hard mod</option>
+               <option value="3">very hard mod</option>
+            </select>
+            <button class="btn__mod">OK</button>
+         </div>
+         <div class="mod__instruction">
+            <ul>
+               <li>easy mod - 10 попыток</li>
+               <li>middle mod - 8 попыток</li>
+               <li>hard mod - 5 попыток</li>
+               <li>very hard mod - 3 попытки</li>
+            </ul>
+         </div>
+      </div>
+   </div>
+   <div class="mod__win">
+      <div class="mod__win-text">
+         Поздравляю!!! Вы победили!!!
+      </div>
+   </div>
+   <div class="mod__lose">
+      <div class="mod__win-text">
+         Вы проиграли:(((
+      </div>
+   </div>
+
+   <script src="main.js"></script>
+</body>
+</html>

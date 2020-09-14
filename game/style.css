@@ -1,0 +1,161 @@
+* {
+   box-sizing: border-box;
+   font-family: 'Roboto',
+   sans-serif;
+}
+
+.game {
+   width: 500px;
+   height: 600px;
+   border: 1px solid black;
+   margin: 100px auto;
+}
+
+.word {
+   margin: 50px auto;
+   font-size: 24px;
+   width: 200px;
+   display: flex;
+   justify-content: space-between;
+}
+
+.tries {
+   width: 220px;
+   font-size: 18px;
+   margin: 20px auto;
+   background-color: aqua;
+   text-align: center;
+   padding: 5px 10px;
+   border-radius: 5px;
+}
+
+form {
+   width: 100px;
+   margin: 10px auto;
+}
+form input {
+   padding: 10px;
+   width: 120px;
+}
+
+form span {
+   display: inline-block;
+   margin-top: 10px;
+   margin-left: 10px;
+}
+
+.wrong {
+   margin: 30px;
+   margin-left: 40px;
+}
+.word span {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.wrong__chars span {
+   font-size: 24px;
+   font-weight: bold;
+   padding: 10px;
+}
+.canvas__wrapper {
+   width: 200px;
+   height: 200px;
+   margin:  20px auto;
+   
+}
+#canvas {
+   border: 1px solid black;
+   
+}
+.mod {
+   display: block;
+   position: fixed;
+   width: 650px;
+   height: 650px;
+   z-index: 100;
+   left: 33%;
+   top: 10%;
+   overflow: auto;
+   background-color: rgb(0, 0, 0);
+   background-color: rgba(54, 47, 90, 1);
+   border-radius: 40px;
+   color: aliceblue;
+}
+
+.mod__wrapper{
+   display: flex;
+   flex-direction: column;
+}
+
+.mod__hello {
+   margin: 30px auto;
+   font-size: 34px;
+   font-weight: bold;
+}
+
+.chose__wrapper {
+   margin: 0 auto;
+   margin-bottom: 50px;
+}
+
+.mod__instruction {
+   margin: 0 auto;
+}
+.mod__instruction li{
+   padding-top: 10px;
+   font-size: 24px;
+}
+.chose__wrapper {
+   width: 200px;
+}
+.chose__mode {
+   width: 200px;
+   font-size: 18px;
+}
+.btn__mod {
+   margin-top: 15px;
+   padding: 4px 3px;
+   margin-left: 85px;
+}
+
+.mod__win {
+   display: none;
+   position: fixed;
+   width: 650px;
+   height: 650px;
+   z-index: 100;
+   left: 33%;
+   top: 10%;
+   overflow: auto;
+   background-color: rgb(0, 0, 0);
+   background-color: rgb(94, 110, 48);
+   border-radius: 40px;
+   color: aliceblue;
+}
+
+.mod__win-text {
+   width: 550px;
+   font-size: 36px;
+   font-weight: bold;
+   margin: 200px auto;
+}
+
+.mod__lose {
+   display: none;
+   position: fixed;
+   width: 650px;
+   height: 650px;
+   z-index: 100;
+   left: 33%;
+   top: 10%;
+   overflow: auto;
+   background-color: rgb(0, 0, 0);
+   background-color: rgb(68, 45, 45);
+   border-radius: 40px;
+   color: aliceblue;
+}
+
+.mod__lose .mod__win-text {
+   width: 300px;
+}
